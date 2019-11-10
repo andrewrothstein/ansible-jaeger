@@ -1,0 +1,9 @@
+---
+# vars file for jaeger
+jaeger_platform: '{{ jaeger_os }}-{{ jaeger_arch }}'
+jaeger_name: jaeger-{{ jaeger_ver }}-{{ jaeger_platform }}
+jaeger_tgz: '{{ jaeger_name }}.tar.gz'
+jaeger_url: '{{ jaeger_mirror }}/v{{ jaeger_ver }}/{{ jaeger_tgz }}'
+jaeger_checksum: '{{ jaeger_checksums[jaeger_ver][jaeger_platform] }}'
+jaeger_install_dir: '{{ jaeger_parent_install_dir }}/{{ jaeger_name }}'
+jaeger_link_dir: '{{ jaeger_parent_install_dir }}/jaeger'

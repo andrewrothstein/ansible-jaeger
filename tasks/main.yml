@@ -1,0 +1,57 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: checks for install
+  become: yes
+  stat:
+    path: '{{ jaeger_install_dir }}'
+  changed_when: False
+  register: jaeger_binary
+- when: not jaeger_binary.stat.exists
+  block:
+    - name: download
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{ jaeger_url }}'
+        dest: /tmp/{{ jaeger_tgz }}
+        mode: 0644
+        checksum: '{{ jaeger_checksum }}'
+    - name: unarchive
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{ jaeger_tgz }}
+        dest: '{{ jaeger_parent_install_dir }}'
+        creates: '{{ jaeger_install_dir }}'
+  always:
+    - name: cleanup
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{ jaeger_tgz }}
+        state: absent
+- name: link
+  become: yes
+  become_user: root
+  file:
+    src: '{{ jaeger_install_dir }}'
+    dest: '{{ jaeger_link_dir }}'
+    state: link
+- name: links
+  become: yes
+  become_user: root
+  with_items: '{{ jaeger_links }}'
+  file:
+    src: '{{ jaeger_link_dir }}/{{ item }}'
+    dest: '{{ jaeger_parent_install_dir }}/bin/{{ item }}'
+    state: link
