@@ -1,6 +1,6 @@
 ---
 # defaults file for jaeger
-jaeger_ver: '1.17.0'
+jaeger_ver: 1.37.0
 jaeger_mirror: https://github.com/jaegertracing/jaeger/releases/download
 jaeger_os: linux
 jaeger_arch: amd64
@@ -33,3 +33,184 @@ jaeger_checksums:
     darwin-amd64: sha256:f6f6527c0370f67fef7631d2a7fc37c233d7c1686875dee4d8008507b87d8564
     # https://github.com/jaegertracing/jaeger/releases/download/v1.17.0/jaeger-1.17.0-windows-amd64.tar.gz
     windows-amd64: sha256:d98a4e3c41b05d705231597f0175b6cd3ed5f05a0fb76916c9ffb2b37ce5fa2c
+  '1.17.1':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.17.1/jaeger-1.17.1-linux-amd64.tar.gz
+    linux-amd64: sha256:c93eeb96f39f90833d1eacaee8c2b2047ede4b71ba66d108169e32c8cecc0913
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.17.1/jaeger-1.17.1-darwin-amd64.tar.gz
+    darwin-amd64: sha256:0920b1b7883115a0fb336c60b2583508a283df3e8d328ed97f0663b3e799f2da
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.17.1/jaeger-1.17.1-windows-amd64.tar.gz
+    windows-amd64: sha256:25e214860de6a6014fffc61788c46b020df7bbcfac4945d0f301f31731865144
+  '1.18.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.0/jaeger-1.18.0-linux-amd64.tar.gz
+    linux-amd64: sha256:a8899856872c127d4938c2bb8a46d2c43b4e244c1b2b949f4827cb97dc3c59ca
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.0/jaeger-1.18.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:1177009bc7a8ed1493ab186854c07d26aba19567c845ffb02a2e61724f616346
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.0/jaeger-1.18.0-windows-amd64.tar.gz
+    windows-amd64: sha256:09f72edc1e798c62811c456868aea5cf9eabe5c6ce0ec1e93bfac6e5000e2db6
+  '1.18.1':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.1/jaeger-1.18.1-linux-amd64.tar.gz
+    linux-amd64: sha256:a2ff67859975db39024466c2e5f51626e5d1217cb5a83780158741158c670827
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.1/jaeger-1.18.1-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f899b6c29b0c94e9330a01db0d57b44a60de202346988c87ed053dd3b107d3ba
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.18.1/jaeger-1.18.1-windows-amd64.tar.gz
+    windows-amd64: sha256:42272ecafe089faafc346b22657b47d985d9ba6d657163da54d297dbc4c9ffbe
+  '1.19.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.0/jaeger-1.19.0-linux-amd64.tar.gz
+    linux-amd64: sha256:9831aa0df54a96070de9b718fa03fce93d5eb6598a51cf7f8bc21785e10c2bd9
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.0/jaeger-1.19.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:a765886a1690a62a9728b3177e1cb77dbbba264d359afa5705bfb6cf17e52173
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.0/jaeger-1.19.0-windows-amd64.tar.gz
+    windows-amd64: sha256:a74bac115494d65b8fcc98829f27dd27b0e221792814c45610d89193a2ba6d2e
+  '1.19.1':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.1/jaeger-1.19.1-linux-amd64.tar.gz
+    linux-amd64: sha256:25ca802df68fb4d6037289dc38203134227142aa8773d897f065dc7059c37b07
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.1/jaeger-1.19.1-darwin-amd64.tar.gz
+    darwin-amd64: sha256:863b707a6a9232a36709ea4681f59768c8b65f82a817ffd1f191a1f8f84c5c6e
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.1/jaeger-1.19.1-windows-amd64.tar.gz
+    windows-amd64: sha256:d4833c1ce7f0f9ff0193567d631c625ae4f4bf16fba0cadab708b344b65053f1
+  '1.19.2':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.2/jaeger-1.19.2-linux-amd64.tar.gz
+    linux-amd64: sha256:56e4be185f25fddb9406bb1982c5692c308dc687a7799d9d725deb084d8e874a
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.2/jaeger-1.19.2-darwin-amd64.tar.gz
+    darwin-amd64: sha256:1d3ce453db73e0124319714bde6e6e1153e3aaf5b4d6e9480b4225a7500e8dd7
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.19.2/jaeger-1.19.2-windows-amd64.tar.gz
+    windows-amd64: sha256:d1ddcc7296eb2152fb8710e64d9f505bf598d962c2ed4fb5bb1c293e500a6a6e
+  '1.20.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.20.0/jaeger-1.20.0-linux-amd64.tar.gz
+    linux-amd64: sha256:543e9ae7b53e2b4ddfee9a77ddddb58705756f73251bf876b473fc69b9260689
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.20.0/jaeger-1.20.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:b8e8149e6da1692e8e416ce9fcd69113a91de2846d8702585ec727d027f02c7f
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.20.0/jaeger-1.20.0-windows-amd64.tar.gz
+    windows-amd64: sha256:2876107c4baa278a24d663aaadc618f6e00ef019f834c5368c211f4c7b1e329b
+  '1.21.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.21.0/jaeger-1.21.0-linux-amd64.tar.gz
+    linux-amd64: sha256:5a24ed595aafc2ae85f4f2b072fa19af7b66602a8377d55e7ed7548dd7d84c80
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.21.0/jaeger-1.21.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:fe822ec9c7c29275fb34d5bbc4aad6b4f7da6e252523a2263f763b9242baeb89
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.21.0/jaeger-1.21.0-windows-amd64.tar.gz
+    windows-amd64: sha256:6467374d0cf768ba65f4b4d843696dc40594b661c16d7a26b7e88a3fba8fa4d1
+  '1.22.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.22.0/jaeger-1.22.0-linux-amd64.tar.gz
+    linux-amd64: sha256:68f358aa1a1af55b05b7cdd2e74a201829b69d13e214c7f25976c29db76fe690
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.22.0/jaeger-1.22.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:3b26b0ebe6c1e324afc8fd2a1865d3abc02142d4ec877eb4fbc39782b63a57e0
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.22.0/jaeger-1.22.0-windows-amd64.tar.gz
+    windows-amd64: sha256:6de1c6f11691da874cbd18a5f2c5d39e3d4fd5f5abeec0f87acd1ff36c3b498a
+  '1.23.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.23.0/jaeger-1.23.0-linux-amd64.tar.gz
+    linux-amd64: sha256:6b5bcf9bfb30ce512698bb165e6659677f27e2e0e95b85960b81184ac76c04db
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.23.0/jaeger-1.23.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:4430152a619f2527f12ba73e256380061af1394cd6babef28e3f4d7b302f2961
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.23.0/jaeger-1.23.0-windows-amd64.tar.gz
+    windows-amd64: sha256:e74d6af3dd642d9a7c99153d50bc4427ec56651531be1b7ac92d663b7d9e7290
+  '1.24.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.24.0/jaeger-1.24.0-linux-amd64.tar.gz
+    linux-amd64: sha256:4c7aab4dad54eb572b67d9402be10741630f927a2bc85481cd58eff657c89216
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.24.0/jaeger-1.24.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:1786fa4ca0d93100522f25351d5b25c03ca60568783de4d5b251f3b3cf842538
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.24.0/jaeger-1.24.0-windows-amd64.tar.gz
+    windows-amd64: sha256:3ec1eccea8e8ce6c9e6a4ba31c340eeed48d8bb4ae2c65c235323d5db0c54b2b
+  '1.25.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.25.0/jaeger-1.25.0-linux-amd64.tar.gz
+    linux-amd64: sha256:8600163c01652a544439c2d5e60c5b6eb02a30a366959bb0bb73e1024d7be876
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.25.0/jaeger-1.25.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f441a03d4918d26ce5df68869da29c95ef2b3066c638dfc093857f34de6d9a89
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.25.0/jaeger-1.25.0-windows-amd64.tar.gz
+    windows-amd64: sha256:8ade320dfe1910463a3732598b6c83397102986c5c724ca93e7652ba0231184b
+  '1.26.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.26.0/jaeger-1.26.0-linux-amd64.tar.gz
+    linux-amd64: sha256:2953128f49d9b0f63cbf3bd25779ecb25ec0ec76404318ff8e373f442691b244
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.26.0/jaeger-1.26.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:7ec84b78c2b5aa7b194cd6b123b4dbcf509473d7e4689e4b8c89d0d8f6085a63
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.26.0/jaeger-1.26.0-windows-amd64.tar.gz
+    windows-amd64: sha256:e3b2b30d7d07c6344f0dd037389d01617bb58585499e363789f89a7ba46ce1f0
+  '1.27.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.27.0/jaeger-1.27.0-linux-amd64.tar.gz
+    linux-amd64: sha256:f7677780fdb5d641448c8139c6105bee6d0cf7368f10fd9f101a8fcd8b511329
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.27.0/jaeger-1.27.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:ce444a4b2679fc53e06d3162c719eaa5314e7ef7c7cfb47b26e3179aa554f873
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.27.0/jaeger-1.27.0-windows-amd64.tar.gz
+    windows-amd64: sha256:695dcc822b77d71556b1d0970b85a139b031484a5e41982dcd9fc5bf354500a3
+  '1.28.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.28.0/jaeger-1.28.0-linux-amd64.tar.gz
+    linux-amd64: sha256:68ae7be006dbad862ac8352e8abdced2e3965af9f9e83ff19fc269a51ddd5cf7
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.28.0/jaeger-1.28.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f087edc143c81eebdebaff87b3dcba7fa790221055d0238cdd72446c5059f66b
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.28.0/jaeger-1.28.0-windows-amd64.tar.gz
+    windows-amd64: sha256:422786628dd4d141ef093562b7bfe0b39e4cb63697d608630aa0d0d0b711febe
+  '1.29.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.29.0/jaeger-1.29.0-linux-amd64.tar.gz
+    linux-amd64: sha256:3f739a1c2d073993202f8afbf0830badc8e900fcc536d68e42ef421222a98d0e
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.29.0/jaeger-1.29.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:fcb0283d333183d6db5bdac21ed3923fd390f2862761bb8b2fc7699c925ccd39
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.29.0/jaeger-1.29.0-windows-amd64.tar.gz
+    windows-amd64: sha256:31d9c63e6364a95711a557edb669facf0c052163f639f798cbc94089f1b7daed
+  '1.30.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.30.0/jaeger-1.30.0-linux-amd64.tar.gz
+    linux-amd64: sha256:19447d30489e7e49ed4452680baf3323381736c5418f2705d5df3ed4ac883fae
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.30.0/jaeger-1.30.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:10a7e204aa84c7eefa43ab96a15fcf00bae2ca7712974ae90972c50afe3300a1
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.30.0/jaeger-1.30.0-windows-amd64.tar.gz
+    windows-amd64: sha256:4c1b1ca4f22cdd54d004b55861cdd35a9bff9498ca9b1e0b3a021f0167747a22
+  '1.31.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.31.0/jaeger-1.31.0-linux-amd64.tar.gz
+    linux-amd64: sha256:c89a37f440ed5e9c072488c3c13b389d4190550a7e08981286e4e67e0b078b3b
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.31.0/jaeger-1.31.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:340fd254f65d741a0294d5804cf320be451655a0036a0d169720abf7a8f4fe07
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.31.0/jaeger-1.31.0-windows-amd64.tar.gz
+    windows-amd64: sha256:7f7e71760425a0c462d1b77b418dd90eaabc1de61c4def82dc42868d43bd5a25
+  '1.32.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.32.0/jaeger-1.32.0-linux-amd64.tar.gz
+    linux-amd64: sha256:0238512a89159332853dc0e68960064d49005f360c52e2747b1f838a72da5a30
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.32.0/jaeger-1.32.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:9376115aefd9fe4bb8cc6b6a076375392b7df0cea158b3fde6b7fa850431b489
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.32.0/jaeger-1.32.0-windows-amd64.tar.gz
+    windows-amd64: sha256:e54197996f0333508ef5bc693f17d4f67018c51fcdefd5cd81a69545deae07a0
+  '1.33.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.33.0/jaeger-1.33.0-linux-amd64.tar.gz
+    linux-amd64: sha256:d0ecaa69e1ccf82263a385baf4477646788468961f18be40752f95738bb18cfb
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.33.0/jaeger-1.33.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:833d14bc8820f36fc610b204fefa90567c5abbefeca8729c50acaf1e9d092024
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.33.0/jaeger-1.33.0-windows-amd64.tar.gz
+    windows-amd64: sha256:7a245e3e50cde00eefce5c45700aefa2cf27f6d95e8d825dbf6bb7b6393de274
+  '1.34.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.0/jaeger-1.34.0-linux-amd64.tar.gz
+    linux-amd64: sha256:d90dea198c17bd2b1c8b095e19353f9f1576d7f251b7c3bb51a778b7197e6d59
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.0/jaeger-1.34.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:e4a981456dec5ac38a9296cf756fe2788f5d12c0fc34d8b0b1185ea9dcde5cdc
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.0/jaeger-1.34.0-windows-amd64.tar.gz
+    windows-amd64: sha256:26bd573be11f2519fc8bf2d6d5ac4effd10d02f529afdb5f184bcee133fcbf95
+  '1.34.1':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.1/jaeger-1.34.1-linux-amd64.tar.gz
+    linux-amd64: sha256:ca26fa6316d8ee682cedd517ec194e85a93c64e4028c5eba7a29b9cb1f78050c
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.1/jaeger-1.34.1-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f4e6936b896168c3e438e28eebaf575979bbe439a51120718e8b115eb17daf45
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.34.1/jaeger-1.34.1-windows-amd64.tar.gz
+    windows-amd64: sha256:ba14f0931435fe7056828d4c00333d0c942e8cc284f3ebdef33a8508c898ad47
+  '1.35.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.35.0/jaeger-1.35.0-linux-amd64.tar.gz
+    linux-amd64: sha256:6b5c591e2b50e6d8cd4b48042e11ec241d4e622257d110c1a77e15db10b3fde6
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.35.0/jaeger-1.35.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:818087331a11e1442fc02884500d6a87c64daf893af4b1293ab9e8cb1851bb98
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.35.0/jaeger-1.35.0-windows-amd64.tar.gz
+    windows-amd64: sha256:2f5600d7a28b2f904111ed8aae0313af3b09ffa6ccf0eedd0d3ae9acc03ce534
+  '1.36.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.36.0/jaeger-1.36.0-linux-amd64.tar.gz
+    linux-amd64: sha256:c6ebea78247d8daf528dd054f9708f26e2cd2dbfcfb1219b9a3866fe7fbb6a63
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.36.0/jaeger-1.36.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:2ec9e2d316f40c062c097509a9b2c498b5d453c3fdc8b285265e9038d5556154
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.36.0/jaeger-1.36.0-windows-amd64.tar.gz
+    windows-amd64: sha256:9dd8340ac5ed38e63e5780a138f2dc22c9119b313d755cbff9e397bb9c787166
+  '1.37.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:8fa1e7fdfc87bbc7ae1b3f902104838b2c782326e6bf55e24ed578ea85d8fd52
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:85ba517092a773d10e6a11c985aedd76db9a0d018fbdc1b45e22eea37677b7e2
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-linux-amd64.tar.gz
+    linux-amd64: sha256:29749ad64ed8519b31a40e2e21656b1ee9605548f13c7c634ada140c112d3a21
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-linux-arm64.tar.gz
+    linux-arm64: sha256:66345b8b63f4f4954d810b69c3b154afb8af7f9dd81b025a391824ca3b878573
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:bd973d0b469b4d3eb95ca8738d0039f05a1afbfe9f0ef0c822752d83073e492c
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-linux-s390x.tar.gz
+    linux-s390x: sha256:44808d272c7b1baa526cfba33d75b978227ef8ecd88c0888202e5b5b6711a5d5

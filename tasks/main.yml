@@ -9,46 +9,46 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: checks for install
-  become: yes
+- name: check for install in {{ jaeger_install_dir }}
+  become: true
   stat:
     path: '{{ jaeger_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: jaeger_binary
 - when: not jaeger_binary.stat.exists
   block:
-    - name: download
-      become: yes
+    - name: downloading {{ jaeger_url }} to {{ jaeger_tmp_tgz }}
+      become: true
       become_user: root
       get_url:
         url: '{{ jaeger_url }}'
-        dest: /tmp/{{ jaeger_tgz }}
+        dest: '{{ jaeger_tmp_tgz }}'
         mode: 0644
         checksum: '{{ jaeger_checksum }}'
-    - name: unarchive
-      become: yes
+    - name: unarchiving {{ jaeger_tmp_tgz }} to {{ jaeger_parent_install_dir }}
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
-        src: /tmp/{{ jaeger_tgz }}
+        remote_src: true
+        src: '{{ jaeger_tmp_tgz }}'
         dest: '{{ jaeger_parent_install_dir }}'
         creates: '{{ jaeger_install_dir }}'
   always:
-    - name: cleanup
-      become: yes
+    - name: rm -f {{ jaeger_tmp_tgz }}
+      become: true
       become_user: root
       file:
-        path: /tmp/{{ jaeger_tgz }}
+        path: '{{ jaeger_tmp_tgz }}'
         state: absent
-- name: link
-  become: yes
+- name: linking {{ jaeger_link_dir }} to {{ jaeger_install_dir }}
+  become: true
   become_user: root
   file:
     src: '{{ jaeger_install_dir }}'
     dest: '{{ jaeger_link_dir }}'
     state: link
-- name: links
-  become: yes
+- name: linking apps in {{ jaeger_link_dir }} from {{ jaeger_parent_install_dir }}/bin
+  become: true
   become_user: root
   with_items: '{{ jaeger_links }}'
   file:

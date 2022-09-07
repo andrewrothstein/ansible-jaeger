@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+set -e
+
 DIR=~/Downloads
 MIRROR=https://github.com/jaegertracing/jaeger/releases/download
 
@@ -14,7 +16,7 @@ dl()
 
     if [ ! -e $lfile ];
     then
-        wget -q -O $lfile $url
+        curl -sSLf -o $lfile $url
     fi
 
     printf "    # %s\n" $url
@@ -24,9 +26,12 @@ dl()
 dlver () {
     local ver=$1
     printf "  '%s':\n" $ver
-    dl $ver linux amd64
     dl $ver darwin amd64
-    dl $ver windows amd64
+    dl $ver darwin arm64
+    dl $ver linux amd64
+    dl $ver linux arm64
+    dl $ver linux ppc64le
+    dl $ver linux s390x
 }
 
-dlver ${1:-1.17.0}
+dlver 1.37.0
