@@ -1,9 +1,13 @@
 ---
 # defaults file for jaeger
-jaeger_ver: 1.37.0
+jaeger_ver: 1.40.0
 jaeger_mirror: https://github.com/jaegertracing/jaeger/releases/download
-jaeger_os: linux
-jaeger_arch: amd64
+jaeger_arch_map:
+  aarch64: arm64
+  arm64: arm64
+  ppc64le: ppc64le
+  s390x: s390x
+  x86_64: amd64
 jaeger_parent_install_dir: /usr/local
 jaeger_links:
   - jaeger-agent
@@ -214,3 +218,42 @@ jaeger_checksums:
     linux-ppc64le: sha256:bd973d0b469b4d3eb95ca8738d0039f05a1afbfe9f0ef0c822752d83073e492c
     # https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaeger-1.37.0-linux-s390x.tar.gz
     linux-s390x: sha256:44808d272c7b1baa526cfba33d75b978227ef8ecd88c0888202e5b5b6711a5d5
+  '1.38.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f6ea72a6c1cc65a065103aec881c408692e381ab12538d22f9da49b8174f4cd4
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:4a3130fd1a0a699d9117d4581bd011e0fbc1915bd71c00f2f6d6a80a336faa04
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-linux-amd64.tar.gz
+    linux-amd64: sha256:6583707466a9178aca17236d2eb52e16aa7b83de1bd2622cf28110f529e21471
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-linux-arm64.tar.gz
+    linux-arm64: sha256:52f7daddeac8ab340e80db89c3789125d869f028b84b7e358aa22dc354592fdd
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:48284f30db27bb14453efc30ec443f8de6deca152ae385c466db4d25a9e35a70
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.38.0/jaeger-1.38.0-linux-s390x.tar.gz
+    linux-s390x: sha256:135f0c4a03aa7f49b44da2173306231ebd980861fd6a1c2accd9b02e895e14de
+  '1.39.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:fb5e496c2d907ba0e855ba84cab8ce9a1a5bb2775b125810c3d27498ab30a3a9
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:d7779c74837c86b65c741aef00a5798f2c72d01b259a5a8b9b1aa51fc53ee904
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-linux-amd64.tar.gz
+    linux-amd64: sha256:2d3d416a9c910861b804ad2759b83217996bee24bb3848217139b5a466ab978a
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-linux-arm64.tar.gz
+    linux-arm64: sha256:2c03798865084ffe69b8b5ea808c39773457c19fe64e10c81c9b4d2f22357ae0
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:77531df6a18739c8e46fad38a2d7fb273980f6528ab1dc1e2d8b85e373885ffa
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.39.0/jaeger-1.39.0-linux-s390x.tar.gz
+    linux-s390x: sha256:9008378d96a303c59ada0474bebb2e82365ce5551614d3036a16576ae34f607e
+  '1.40.0':
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:be449c0a5ef63650f72e13cdd6809342231bcfe58c7d1c2bd361139affe2e285
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:0a66f03a9a3c3f09d98d168265352979171f5d338c0b3968f43daf3ff8f0dee0
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-linux-amd64.tar.gz
+    linux-amd64: sha256:a40455526e788686427317c8a878eb7f967ab5c020f0c012bd19b7fffe25fc39
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-linux-arm64.tar.gz
+    linux-arm64: sha256:6e9ac17ef5a9fd7717e7a6380137b4c8628442c132cbe7597f598521934e4e3d
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:cc18028c3470aa2702759c5879b1dbfab22c7feb8ee6b0a6cda4f030bce5faa9
+    # https://github.com/jaegertracing/jaeger/releases/download/v1.40.0/jaeger-1.40.0-linux-s390x.tar.gz
+    linux-s390x: sha256:86dbed337e34854ffcbf431485af7b86412968afbdf83ca2d51b8420a329287c

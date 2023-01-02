@@ -1,5 +1,7 @@
 ---
 # vars file for jaeger
+jaeger_os: '{{ ansible_system | lower }}'
+jaeger_arch: '{{ jaeger_arch_map[ansible_architecture] }}'
 jaeger_platform: '{{ jaeger_os }}-{{ jaeger_arch }}'
 jaeger_name: jaeger-{{ jaeger_ver }}-{{ jaeger_platform }}
 jaeger_tgz: '{{ jaeger_name }}.tar.gz'
