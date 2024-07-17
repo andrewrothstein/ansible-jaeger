@@ -34,4 +34,4 @@ dlver () {
     dl $ver linux s390x
 }
 
-dlver ${1:-1.47.0}
+dlver ${1:-1.59.0}
