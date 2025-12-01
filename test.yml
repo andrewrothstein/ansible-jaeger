@@ -4,10 +4,10 @@
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - name: Executing 'jaeger-agent version'
-      ansible.builtin.command: jaeger-agent version
+    - name: Executing 'jaeger-all-in-one version'
+      ansible.builtin.command: jaeger-all-in-one version
       changed_when: false
       register: jaegar_test_output
-    - name: Output from 'jaeger-agent version'
+    - name: Output from 'jaeger-all-in-one version'
       ansible.builtin.debug:
         msg: '{{ jaegar_test_output.stdout }}'

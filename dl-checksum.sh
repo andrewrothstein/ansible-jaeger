@@ -34,4 +34,19 @@ dlver () {
     dl $ver linux s390x
 }
 
-dlver ${1:-1.59.0}
+dlver 1.60.0
+dlver 1.61.0
+dlver 1.62.0
+dlver 1.63.0
+dlver 1.64.0
+dlver 1.65.0
+dlver 1.66.0
+dlver 1.67.0
+dlver 1.68.0
+dlver 1.69.0
+dlver 1.70.0
+dlver 1.71.0
+dlver 1.72.0
+dlver 1.73.0
+dlver 1.74.0
+dlver ${1:-1.75.0}
